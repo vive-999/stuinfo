@@ -49,9 +49,9 @@ function getuserData() {
     var lname = document.getElementById('lname').value;
     userData['name'] = fname + " " + lname;
 
-    //Phone number Blank solution
-    userData['phone'] = document.getElementById('phone').value;
-    userData['phone'] = document.getElementById('phone').value;
+    phone = document.getElementById('phone').value;
+    if (phone.length < 10){phone = "   - ";}else{phone = phone;}
+    userData['phone'] = phone;
     var allTableData = document.getElementById("studenttable");
     userData['sno'] = allTableData.rows.length;
 
