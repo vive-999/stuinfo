@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+</head>
+
+<body>
+    <h2>
+        Student Information
+    </h2>
+    <div class="container">
+
+        <table class="table" id="studenttable">
+            <thead>
+                <tr>
+                    <th scope="col">Sr No</th>
+                    <th scope="col">Name </th>
+                    <th scope="col">Phone </th>
+                    <th scope="col">Hobbies </th>
+                    <th scope="col">Actions </th>
+                </tr>
+            </thead>
+
+            <tbody id="tableBody">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>dsa</td>
+                    <td id='deleteme'>asfd</td>
+                    <td>afsa</td>
+                    <td><button onclick="onEdit(this)">Edit</button><button onclick="onDelete(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>dsa</td>
+                    <td id='deleteme2'>asfd</td>
+                    <td>afsa</td>
+                    <td><button onclick="onEdit(this)">Edit</button><button onclick="onDelete(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>dsa</td>
+                    <td id='deleteme3'>asfd</td>
+                    <td>afsa</td>
+                    <td><button onclick="onEdit(this)">Edit</button><button onclick="onDelete(this)">Delete</button></td>
+                </tr> -->
+
+            </tbody>
+        </table>
+
+    </div>
+    <div>
+
+        <hr>
+        <h3 id="h3_id">Add New</h3>
+
+        First Name: <input type="text" id="fname">
+        Last Name: <input type="text" id="lname"><br>
+        Phone: <input type="number" id="phone"><br>
+        <div id="gender">
+            Gender: <input type="radio" id="male" class="gender" name="gender" value="Male">
+              <label for="male">Male</label>
+              <input type="radio" id="female" class="gender" name="gender" value="Female">
+              <label for="female">Female</label><br>
+        </div>
+        Address: <textarea id="address"></textarea><br>
+        Country: <select id="country" name="country">
+            <option>Select Country</option>
+            <option>India</option>
+            <option>Russia</option>
+            <option>Japan</option>
+        </select>
+        State: <select id="state" name="state">
+            <option>Select State</option>
+            <option>Maharashtra</option>
+            <option>Tokyo</option>
+            <option>Berlin</option>
+        </select>
+        City: <select id="city" name="city">
+            <option>Select City</option>
+            <option>Dombivali</option>
+            <option>Thane</option>
+            <option>Vasind</option>
+        </select>
+        <br>
+        Hobbies:
+        <input type="checkbox" id="hobby1" class="hobbies" value="Movies">Movies
+        <input type="checkbox" id="hobby2" class="hobbies" value="Games">Games
+        <input type="checkbox" id="hobby3" class="hobbies" value="Reading">Reading
+        <input type="checkbox" id="hobby4" class="hobbies" value="Sleeping">Sleeping
+        <input type="checkbox" id="hobby5" class="hobbies" value="Coding">Coding
+        <input type="checkbox" id="hobby6" class="hobbies" value="Dancing">Dancing
+
+    </div>
+    <br>
+    <button id="clickme" onclick="updateData()"> Save </button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
